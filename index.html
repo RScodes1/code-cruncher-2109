@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d28836e875.js" crossorigin="anonymous"></script>
     <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="remember-me" id="remember_me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <button type="submit">Login</button>
+            <button type="submit">Sign Up</button>
+            <p class="forgot-pw"><a href="#">Forgot password?</a></p>
+        </form>
+        <div class="sm-login">
+            <button class="email-login"><i class="fa-solid fa-envelope"></i>Login with Email</button>
+            <button class="fb-login"><i class="fa-brands fa-facebook"></i>Login with Facebook</button>
+            <button class="google-login"><i class="fa-brands fa-google"></i>Login with Google</button>
+        </div>
+    </div>
 </body>
 </html>

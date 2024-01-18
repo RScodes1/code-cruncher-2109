@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(187, 236, 230); 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    margin: 0;
+    }
+
+    .login-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form {
+    text-align: center;
+    }
+
+    .form-group {
+    margin-bottom: 15px;
+    }
+
+    label {
+    display: block;
+    margin-bottom: 5px;
+    }
+
+    input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+
+    .remember-me{
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    }
+    .remember-me>input{
+        margin-left:-180px;
+        margin-bottom:10px;
+    }
+    .remember-me>label{
+        margin-left:-185px;
+    }
+
+    button {
+    background-color: #2dd11e;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    .forgot-pw {
+    margin-top: 10px;
+    }
+
+    .sm-login {
+    margin-top: 20px;
+    }
+
+    .sm-login button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+
+    .email-login
+    {
+        background-color: rgba(47, 17, 53, 0.849); 
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .fb-login
+    {
+    background-color: rgba(37, 57, 235, 0.849); 
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    }
+    .google-login {
+        background-color: rgba(255, 11, 11, 0.849); 
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        }
