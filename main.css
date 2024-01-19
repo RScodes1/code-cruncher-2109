@@ -1,220 +1,120 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: rgb(175, 175, 35);
-}
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo{
+    margin-left: 30px;
+  }
+  .logo img {
+    width: 70px; 
+    height: auto;
+  }
+  
+ 
+  /* Style the navigation menu */
+  nav ul {
+    display: flex;
+    margin-right: 200px;
+  }
+  
+  nav ul li {
+    margin-right: 40px; 
+    position: relative;
+  }
+ 
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+  }
 
-header {
-  background-color: black;
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  nav a:hover{
+      color: yellow;
+  }
+  
+  /* Style the dropdown menu */
+  nav ul .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  nav ul .dropdown-menu li {
+    padding: 8px 16px;
+    text-align: left;
+    background-color: black ;
+    color: black;
+    border-bottom: 1px solid #555;
+    white-space: nowrap;
+  }
+  
+  nav ul .dropdown-menu a {
+    padding: 8px 20px;
+  }
+  
+  @media screen and (max-width: 548px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    nav ul .dropdown-menu {
+      position: static;
+      display: none;
+    }
+  
+    nav ul .dropdown-menu li {
+      border-bottom: none;
+    }
+  
+    nav ul li:hover .dropdown-menu {
+      display: none;
+    }
+  }
+  
+  .rajasection {
+    margin-top: 50px;
+      background-color: yellow;
+  }
 
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #ccc;
-}
-
-.logo img {
-  height: 40px; /* Adjust the height as needed */
-}
-
-body {
-  padding-top: 60px; /* Adjust this value based on your header height */
-}
-
-section {
-  padding: 20px;
-  margin: 60px 0 0 0; /* Adjust this value based on your header height */
-}
-
-/* Abhay css
-   */
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.accordion {
-  background-color: #ffffff;
-  color: #132e30;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  font-weight: bold;
-
-  font-size: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  transition: 0.4s;
-}
-
-.active,
-.accordion:hover {
-  background-color: #000000;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  overflow: hidden;
-}
-
-.active,
-.accordion:hover {
-  background-color: #ffffff;
-}
-
-.faqContainer {
-  background-color: black;
-  text-align: justify;
-  text-justify: inter-word;
-  width: 70%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  justify-content: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-#FAQTitle {
-  text-align: center;
-  font-size: 30px;
-  background-color: #000000;
-  width: 67%;
-  margin: auto;
-  padding: 20px;
-  margin-bottom: 3%;
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.accordionContainerStyle {
-  padding: 5% 5% 5% 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.prvacyContainer {
-  background-color: black;
-  color: white;
-  width: 60%;
-  margin: auto;
-  text-align: justify;
-  text-justify: inter-word;
-  padding: 5% 5% 5% 5%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.privacyTitle {
-  text-align: center;
-  font-size: 30px;
-  background-color: #000000;
-  width: 67%;
-  margin: auto;
-  padding: 20px;
-  margin-bottom: 3%;
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.aboutContainer {
-  background-color: black;
-  color: white;
-  width: 60%;
-  margin: auto;
-  text-align: justify;
-  text-justify: inter-word;
-  padding: 5% 5% 2% 5%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.aboutTitle {
-  text-align: center;
-  font-size: 30px;
-  background-color: #000000;
-  width: 67%;
-  margin: auto;
-  padding: 20px;
-  margin-bottom: 3%;
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.contactTitle {
-  text-align: center;
-  font-size: 30px;
-  background-color: #000000;
-  width: 67%;
-  margin: auto;
-  padding: 20px;
-  margin-bottom: 3%;
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.contactContainer {
-  background-color: black;
-  color: white;
-  width: 60%;
-  margin: auto;
-  text-align: justify;
-  text-justify: inter-word;
-  padding: 5% 5% 2% 5%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-input {
-  width: 50%;
-  padding: 1%;
-  margin: 1%;
-  font-size: 17px;
-  border-radius: 5px;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-#message {
-  width: 50%;
-  height: 30vh;
-  padding: 1%;
-  margin: 1%;
-  font-size: 15px;
-  border-radius: 5px;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  font-size: 18px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-#contactSubmitBtn {
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 5px;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  background-color: green;
-  margin-left: 31vh;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-/* Abhya Css */
+  .big-brain-time {
+   line-height: 200px;
+  }
+.image-brain{
+   margin-top: 100px;
+   margin-left: 120px;
+  }
