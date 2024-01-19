@@ -108,10 +108,20 @@ body {
   padding-left: 5%;
   padding-right: 5%;
 }
-.prvacyTitle {
-  font-size: 20px;
-  color: #132e30;
+.prvacyContainer {
+  background-color: black;
+  color: white;
+  width: 70%;
+  margin: auto;
+}
+.privacyTitle {
   text-align: center;
-  font-weight: bold;
+  font-size: 30px;
+  background-color: #000000;
+  width: 67%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 3%;
+  color: white;
 }
 /* Abhya Css */
