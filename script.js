@@ -29,30 +29,34 @@ let message = document.getElementById("message");
 let contactSubmitBtn = document.getElementById("contactSubmitBtn");
 
 async function addContact() {
-  let contact = {
-    firstName: firstName.value,
-    lastName: lastName.value,
-    email: email.value,
-    message: message.value,
-  };
-  console.log(contact);
+  try {
+    let contact = {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      email: email.value,
+      message: message.value,
+    };
+    console.log(contact);
 
-  let res = await fetch("https://mock-final-copy-api.onrender.com/Contacts", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(contact),
-  });
-  let data = await res.json();
-  console.log(data);
+    let res = await fetch("https://mock-final-copy-api.onrender.com/Contacts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(contact),
+    });
+    let data = await res.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 contactSubmitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   addContact();
-  //   console.log(firstName.value);
-  //   console.log(lastName.value);
-  //   console.log(email.value);
-  //   console.log(message.value);
+  console.log(firstName.value);
+  console.log(lastName.value);
+  console.log(email.value);
+  console.log(message.value);
 });
