@@ -64,6 +64,7 @@ body {
   font-weight: bold;
 
   font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   transition: 0.4s;
 }
 
@@ -95,6 +96,7 @@ body {
   flex-direction: column;
   margin: auto;
   justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #FAQTitle {
   text-align: center;
@@ -105,11 +107,13 @@ body {
   padding: 20px;
   margin-bottom: 3%;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .accordionContainerStyle {
   padding: 5% 5% 5% 5%;
   padding-left: 5%;
   padding-right: 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .prvacyContainer {
   background-color: black;
@@ -119,6 +123,7 @@ body {
   text-align: justify;
   text-justify: inter-word;
   padding: 5% 5% 5% 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .privacyTitle {
   text-align: center;
@@ -129,6 +134,7 @@ body {
   padding: 20px;
   margin-bottom: 3%;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .aboutContainer {
   background-color: black;
@@ -138,6 +144,7 @@ body {
   text-align: justify;
   text-justify: inter-word;
   padding: 5% 5% 2% 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .aboutTitle {
   text-align: center;
@@ -148,6 +155,7 @@ body {
   padding: 20px;
   margin-bottom: 3%;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .contactTitle {
   text-align: center;
@@ -168,12 +176,13 @@ body {
   text-align: justify;
   text-justify: inter-word;
   padding: 5% 5% 2% 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 input {
   width: 50%;
   padding: 1%;
   margin: 1%;
-  font-size: 15px;
+  font-size: 17px;
   border-radius: 5px;
   border: none;
   display: flex;
