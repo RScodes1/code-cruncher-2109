@@ -115,3 +115,119 @@ body {
   font-weight: bold;
 }
 /* Abhya Css */
+
+/*Sandesh CSS*/
+/*Guided Meditation*/
+#guidedMeditation{
+  /*width: 100%;*/
+  border: 2px solid black;
+  padding: 50px 0px 50px 280px;
+  background-color: rgb(178,255,102);
+}
+#gmTitle{
+  display: flex;
+  width:  1000px;
+  height: 50px;
+  /*border: 2px solid blue;*/
+  margin-bottom: 50px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
+#gmContent{
+  position: relative;
+  width:  1000px;
+  height: 500px;
+  /*border: 2px solid red;*/
+  background-color: black;
+}
+#gmImage{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  bottom: 0px;
+  left: 200px;
+  border: 2px solid green;
+  border-radius: 20px;
+}
+
+/*Audio Stories*/
+#audioStories{
+  /*width: 100%;*/
+  border: 2px solid black;
+  padding: 50px 0px 50px 280px;
+  background-color: rgb(178,255,102);
+}
+#asTitle{
+  display: flex;
+  width:  1000px;
+  height: 50px;
+  /*border: 2px solid blue;*/
+  margin-bottom: 50px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
+#asContent{
+  position: relative;
+  width:  1000px;
+  height: 500px;
+  /*border: 2px solid red;*/
+  background-color: black;
+}
+#asImage{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  bottom: 0px;
+  left: 200px;
+  border: 2px solid green;
+  border-radius: 20px;
+}
+
+/*Reduce Stress*/
+#reduceStress{
+  /*width: 100%;*/
+  border: 2px solid black;
+  padding: 50px 0px 50px 280px;
+  background-color: rgb(178,255,102);
+}
+#rsTitle{
+  display: flex;
+  width:  1000px;
+  height: 50px;
+  /*border: 2px solid blue;*/
+  margin-bottom: 50px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
+#rsContent{
+  position: relative;
+  width:  1000px;
+  height: 500px;
+  /*border: 2px solid red;*/
+  background-color: black;
+}
+#rsImage{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  bottom: 0px;
+  left: 200px;
+  border: 2px solid green;
+  border-radius: 20px;
+}
+/*Sandesh CSS end*/
