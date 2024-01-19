@@ -1,0 +1,387 @@
+{
+    "images" :
+    [
+        {
+        "id": "1",
+        "image" : "https://i.pinimg.com/originals/08/0d/51/080d519e900fa5203e5e13658d197aea.jpg",
+        "name": "Koala",
+        "colors": "brown, white, black",
+        "description" : "This is an wild animal,very social, very innocent, lives on trees."
+        },
+          {
+          "id": "2",
+          "image" : "https://i.pinimg.com/236x/2c/c3/d7/2cc3d7b765b15e06c248ec63687066a6.jpg",
+          "name": "Cat",
+          "colors": "brown, white, black",
+          "description" : "This is an domestic animal, carnivore, likes milk, hunts rats for fun."
+          },
+        {
+        "id": "3",
+        "image" : "https://www.rookieparenting.com/animal-coloring-pages-for-adults-1.png",
+        "name": "Elephant",
+        "colors": "greyish white",
+        "description" : "This is an wild animal,very social."
+        },
+          {
+          "id": "4",
+          "image" : "https://adultcoloringbooks.club/wp-content/uploads/2017/02/animals-adult-coloring-book.png",
+          "name" : "Penguin",
+          "colors": "white, black",
+          "description" : "This is an cold habituated animal,very social."
+          },
+        {
+        "id": "5",
+        "image" : "https://i.pinimg.com/236x/1c/e4/68/1ce468d37a41cfc2781fae435c08e0f7.jpg",
+        "name" : "Sloth",
+        "colors": "brown, white, black",
+        "description" : "This is an wild animal, lives on trees, very slow in movement."
+        },
+          {
+          "id": "6",
+          "image" : "https://printablefreecoloring.com/drawing/relaxation/coloring-anti-stress-127004.jpg",
+          "name": "Fox",
+          "colors": "brown, white, black",
+          "description" : "This is an wild animal, ancestors of dogs."
+          },
+        {
+        "id": "7",
+        "image": "https://momlovesbest.com/wp-content/uploads/2023/06/animal-coloring-pages-11.webp",
+        "name": "Owl",
+        "colors": "brown, white, black",
+        "description" : "This is an nocturnal animal."
+        },
+          {
+          "id": "8",
+          "image" : "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ea43b3b4-d265-4aa9-9073-1e6ab825cb70/dahtk5q-bc572e5e-e238-46aa-aa43-47970f32d1e7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VhNDNiM2I0LWQyNjUtNGFhOS05MDczLTFlNmFiODI1Y2I3MFwvZGFodGs1cS1iYzU3MmU1ZS1lMjM4LTQ2YWEtYWE0My00Nzk3MGYzMmQxZTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b2LHUld6-MFbo1qRFh6JjzAxpU1OFW3st_FEALw7f-M",
+          "name": "Elephant 2",
+          "colors": "greyish white",
+          "description" : "This is an wild animal,very social, cute beings."
+          },
+        {
+        "id": "9",
+        "image" : "https://i.pinimg.com/736x/d7/5a/8a/d75a8a3e5024a628be9e0ff0a6431239.jpg",
+        "name": "Fox 2",
+        "colors": "brown",
+        "description" : "This is an wild animal, ancestors of dogs."
+        },
+          {
+          "id": "10",
+          "image" : "https://www.rookieparenting.com/animal-coloring-pages-for-adults-1.png",
+          "name": "Baby Elephant",
+          "colors": "greyish white, pure white",
+          "description" : "This is an wild animal,very social, cute beings."
+          },
+        {
+        "id": "11",
+        "image" : "https://i.etsystatic.com/14574990/r/il/59d2db/1408508022/il_570xN.1408508022_73hn.jpg",
+        "name": "Lion",
+        "colors": "golden, white, black",
+        "description" : "This is an wild animal,very social, pride is what theirs."
+        },
+          {
+          "id": "12",
+          "image" : "https://img.freepik.com/free-vector/hand-drawn-animal-mandala-illustration_23-2149972095.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705276800&semt=ais",
+          "name": "Rabbit",
+          "colors": "white",
+          "description" : "This is a furry mammals family of squirrels, hares."
+          },
+        {
+        "id": "13",
+        "image" : "https://i.pinimg.com/736x/82/cf/c0/82cfc01de27aaf163a34a3d2b3a20836.jpg",
+        "name": "Rabbit 2",
+        "colors": "white",
+        "description" : "This is a furry mammals family of squirrels, hares."
+        },
+          {
+          "id": "14",
+          "image": "https://natashalh.com/wp-content/uploads/2021/03/antelope-coloring-sheet-preview.jpg",
+          "name": "Giraffe",
+          "colors": "yellow, white, black",
+          "description" : "This is a wild animal, very tall, herbivore."
+          },
+          {
+          "id": "15",
+          "image": "https://www.vhv.rs/dpng/f/448-4488769_animal-adult-coloring-pages-animal-full-page-coloring.png",
+          "name": "Toucan Bird",
+          "colors": "red,yellow, white, black",
+          "description" : "This is a exotic bird, almost extinct."
+          },
+          {
+          "id": "16",
+          "image": "https://st2.depositphotos.com/4264683/8525/v/450/depositphotos_85251530-stock-illustration-hand-drawn-tribal-hippopotamus-head.jpg",
+          "name": "Hippos",
+          "colors": "black, grey, brown",
+          "description" : "This is a mud water animal,domestic,very social, very territorial."
+          },
+          {
+          "id": "17",
+          "image" : "https://i.pinimg.com/1200x/91/29/20/912920aba26f43ac9ea685bc2f76c04d.jpg",
+          "name": "Pig",
+          "colors": "pink, red",
+          "description" : "This is a farm animal,domestic,very social, delicious food."
+          },
+          {
+          "id": "18",
+          "image": "https://media.istockphoto.com/id/614503738/vector/black-and-white-vector-illustration-with-a-chameleon-in-ethnic.jpg?s=612x612&w=0&k=20&c=ikfLnZAB5C6IeQgWxxuTZBch3qQn8dMvYgzzXUVMKLc=",
+          "name": "Chameleons",
+          "colors": ".............",
+          "description" : "This is a wild reptile, changes colors, hunts with it."
+          },
+          {
+          "id": "19",
+          "image": "https://img.freepik.com/premium-vector/mandala-ocean-animals-coloring-pages-kids-adult-premium-vector_638495-138.jpg",
+          "name": "Fish",
+          "colors": "red,yellow, grey, black, white",
+          "description" : "This is a sea animal, one of the human's most favourite foods."
+          },
+          {
+          "id": "20",
+          "image": "https://cdn.shortpixel.ai/spai3/q_lossy+ret_img+to_webp/https://media.madebyteachers.com/wp-content/uploads/2023/09/12081118/animal-mandala-a3-scaled.jpg",
+          "name": "Dolphin",
+          "colors": "blue, grey, white",
+          "description" : "This is a water living fish,very social, intelligent, playful."
+          },
+          {
+          "id": "21",
+          "image" : "https://worldofprintables.com/wp-content/uploads/2023/08/Raccoon-Animal-Coloring-Page-502x650.jpg",
+          "name": "Baby Raccoon",
+          "colors": "brown,white,black",
+          "description" : "This is a wild animal,very social."
+          },
+          {
+          "id": "22",
+          "image": "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjE4Ny10YW5nLTAzLWFuaW1hbGNvbG9yaW5nXzQuanBn.jpg",
+          "name": "African Ancient Cat",
+          "colors": "black, brown, white",
+          "description" : "This is an extinct animal, ancestor of modern cats."
+          },
+          {
+          "id": "23",
+          "image": "https://thumbs.dreamstime.com/b/adult-coloring-book-page-cute-playing-cat-ball-thread-relaxing-zen-art-style-illustration-floral-ornamentson-110547752.jpg",
+          "name": "Cat (playing with a ball)",
+          "colors": "yellow",
+          "description" : "This is a domestic animal,anti social, hunts rats, eats milk."
+          },
+          {
+          "id": "24",
+          "image"  : "https://woojr.com/wp-content/uploads/2020/04/adult-coloring-animals-232x300.jpg",
+          "name": "Puppy",
+          "colors": "white, black",
+          "description" : "This is a dog, human's best companion,domestic,very social."
+          },
+          {
+          "id": "25",
+          "image" : "https://woojr.com/wp-content/uploads/2020/04/easy-adult-coloring-animals-232x300.jpg",
+          "name": "Llama",
+          "colors": "white",
+          "description" : "This is a farm animal, herbivore,very social."
+          },
+          {
+          "id": "26",
+          "image" : "https://www.creativecenter.brother/-/media/creativecenter/contents/home/home/home-category/coloring-pages/adult-coloring/wild-animal-coloring-lion/wild-animal-coloring-lion-coloring-pages-l-en.ashx",
+          "name": "Majestic Lion",
+          "colors": "brown, white, black",
+          "description" : "This is a wild animal,very social, kind of the forest."
+          },
+          {
+          "id": "27",
+          "image": "https://media.istockphoto.com/id/503898302/vector/hand-drawn-frog-for-coloring-book-for-adult-shirt-design.jpg?s=612x612&w=0&k=20&c=uCfIphUS2v33XI_R8GJK0mv--gFr8XVyinY0tPidAKA=",
+          "name": "Frog",
+          "colors": "white, black",
+          "description" : "This is a water animal,lives in mud pool."
+          },
+          {
+          "id": "28",
+          "image" : "https://static.vecteezy.com/system/resources/thumbnails/004/263/770/small/penguins-pattern-hand-drawn-for-adult-coloring-book-vector.jpg",
+          "name": "Baby Penguins",
+          "colors": "white, black",
+          "description" : "This is a cold weather animal, lives in arctic region domestic,very social."
+          },
+          {
+          "id": "29",
+          "image" : "https://img.freepik.com/free-vector/hand-drawn-animal-mandala-illustration_23-2149992762.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1705104000&semt=ais",
+          "name": "Angry Owl",
+          "colors": "white, black",
+          "description" : "This is a nocturnal bird,very silent, domestic,wild, social."
+          },
+          {
+          "id": "30",
+          "image": "https://www.justcolor.net/wp-content/uploads/sites/1/nggallery/mouses/coloring-adult-animals-mouse.jpg",
+          "name": "Ancient Rat",
+          "colors": "brown, black",
+          "description" : "This is a rodent animal,domestic, wild, social."
+          }
+      ],
+    
+      
+        "affirmations" :
+        [
+          {
+            "id": "1",
+            "image" : "https://blog.gratefulness.me/content/images/2023/01/ram-dass5-1.jpg",
+            "name": "Ram Dass",
+            "description" : "Opportunities,strength, ability."
+            },
+            {
+              "id": "2",
+              "image" : "https://blog.gratefulness.me/content/images/2023/01/ram-dass3.jpg",
+              "name": "Ram Dass",
+              "description" : "Awareness."
+              },
+          {
+            "id": "3",
+            "image" : "https://jessicadimas.com/wp-content/uploads/2021/03/ram-dass-quotes-the-light.png",
+            "name": "Ram Dass",
+            "description" : "Teacher,light,lessons."
+            },
+            {
+              "id": "4",
+              "image" : "https://i.pinimg.com/236x/17/38/03/173803ef8cfda0d4b3087a8016e9c63f.jpg",
+              "name": "Ram Dass",
+              "description" : "love,strength, compassion."
+              },
+              {
+                "id": "5",
+                "image" : "https://positivethinkingmind.com/wp-content/uploads/2020/05/ram-dass-quotes720x480.jpg",
+                "name": "Ram Dass",
+                "description" : "ability."
+                },
+            {
+              "id": "6",
+              "image" : "https://www.realsimple.com/thmb/HV_lfSEbnNwEY2phffBTl59h-As=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/positive-quotes-captions-life-motivational-inspirational-oscar-wilde-6ab0bbfa11404208ad603a2de3ca7234.jpg",
+              "name": "Oscar Wilde",
+              "description" : "strength, ability."
+              },
+              {
+                "id": "7",
+                "image" : "https://everydaypower.com/wp-content/uploads/2022/09/Motivational-1-Liners-About-Living-Life-Better-12.png",
+                "name": "Earl Nightingale",
+                "description" : "Opportunities,strength, ability."
+                },
+                {
+                  "id": "8",
+                  "image" : "https://www.rd.com/wp-content/uploads/2021/08/kate-winslet-life-is-short-quote.jpg?resize=1536%2C1536",
+                  "name": "Kate Winslet",
+                  "description" : "strength, ability."
+                  },
+                  {
+                    "id": "9",
+                    "image" : "https://everydaypower.com/wp-content/uploads/2023/11/short-inspirational-quotes-by-Thomas-Carlyle.png",
+                    "name": "Thomas Caryrle",
+                    "description" : "strength, ability."
+                    },
+                {
+                  "id": "10",
+                  "image" : "https://hips.hearstapps.com/hmg-prod/images/tim-storey-quote-1621370969.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                  "name": "Tim Storey",
+                  "description" : "strength, ability."
+                  },
+                  {
+                    "id": "11",
+                    "image" : "https://i.pinimg.com/236x/f8/c2/b5/f8c2b5981a9407cd11c8a05ffc6cc862.jpg",
+                    "name": "Unknown",
+                    "description" : "strength, ability."
+                    },
+              {
+                "id": "12",
+                "image" : "https://i.pinimg.com/236x/f0/69/62/f0696209f8f016931fd792786562c3d4.jpg",
+                "name": "Unknown",
+                "description" : "strength, ability."
+                },
+              {
+                "id": "13",
+                "image" : "https://quotefancy.com/media/wallpaper/3840x2160/775434-Kate-Winslet-Quote-If-you-don-t-try-at-anything-you-can-t-fail.jpg",
+                "name": "Unknown",
+                "description" : "strength, ability."
+                },
+              {
+                "id": "14",
+                "image" : "https://hips.hearstapps.com/hmg-prod/images/oprah-quote-4-1621436081.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                "name": "Unknown",
+                "description" : "strength, ability."
+                },
+              {
+                "id": "15",
+                "image" : "https://hips.hearstapps.com/hmg-prod/images/brene-brown-quote-1621436002.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                "name": "Brene Brown",
+                "description" : "strength, ability."
+                },
+              {
+                "id": "16",
+                "image" : "https://hips.hearstapps.com/hmg-prod/images/yrsa-daley-ward-1621436133.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                "name": "Yrsa Daley",
+                "description" : "strength, ability."
+                },
+              {
+                "id": "17",
+                "image" : "https://hips.hearstapps.com/hmg-prod/images/heather-havrilesky-1621436209.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                "name": "Heather Havrileksy",
+                "description" : "strength, ability."
+                },
+                {
+                  "id": "18",
+                  "image" : "https://hips.hearstapps.com/hmg-prod/images/michelle-obama-quote-1621367959.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                  "name": "Michelle Obama",
+                  "description" : "strength, ability."
+                  },
+              {
+                "id": "19",
+                "image" : "https://hips.hearstapps.com/hmg-prod/images/jon-kabat-zinn-quote-1621371989.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                "name": "Kabat Zinn",
+                "description" : "strength, ability."
+                },
+                {
+                  "id": "20",
+                  "image": "https://images.squarespace-cdn.com/content/v1/5b9952adc258b451bdc43cc2/3f2f132a-47b1-49ed-ae18-9ffc7a52a11d/Family+Affirmations+1+%282%29.png",
+                  "name": "West Nest",
+                  "description" : "strength, ability."
+                  },
+              {
+                "id": "21",
+                "image" : "https://snacknation.com/wp-content/uploads/2021/12/Best-Positive-Affirmations-For-Work-e1638481307317.png",
+                "name": "Unknown",
+                "description" : "strength, ability."
+                },
+                {
+                  "id": "22",
+                  "image" : "https://www.realsimple.com/thmb/ICzj6znno_n8bDgyw8xxp8DGAaA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/positiveaffirmations-GettyImages-636426958-f28549f1d9d74a78a1dba779fec17b5c.jpg",
+                  "name": "Unknown",
+                  "description" : "strength, ability."
+                  },
+              {
+                "id": "23",
+                "image" : "https://www.careerstaff.com/wp-content/uploads/2023/10/positive-affirmations-for-nurses.png",
+                "name": "Career Staff",
+                "description" : "strength, ability."
+                },
+              {
+                "id": "24",
+                "image" : "https://miro.medium.com/v2/resize:fit:1200/1*eP9jixKUyBMUKkk5f1ePbw.jpeg",
+                "name": "Medium",
+                "description" : "strength, ability."
+                },
+                {
+                  "id": "25",
+                  "image" : "https://bloomaffirmations.com/wp-content/uploads/2022/06/10-Most-Powerful-Affirmations-Pin-10.png",
+                  "name": "Bloom Affirmations",
+                  "description" : "strength, ability."
+                  }
+        ],
+  
+        "Contacts" :
+       [
+           {
+                "id" : "1",
+                "firstname" : "dummy",
+                "lastname" :  "kumar",
+                "email" : "dummy@gmail.com",
+                "message" : "this is dummy"
+           }
+       ],
+       
+       "thoughts" : [
+         {
+              "Content" : "I am doing a project"
+         }
+       ]
+    }
