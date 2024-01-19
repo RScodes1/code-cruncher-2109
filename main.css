@@ -1,120 +1,299 @@
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: 'Courier New', Courier, monospace;
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 30px;
+}
+.logo img {
+  width: 70px;
+  height: auto;
+}
+
+/* Style the navigation menu */
+nav ul {
+  display: flex;
+  margin-right: 200px;
+}
+
+nav ul li {
+  margin-right: 40px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+/* Style the dropdown menu */
+nav ul .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+nav ul .dropdown-menu li {
+  padding: 8px 16px;
+  text-align: left;
+  background-color: black;
+  color: black;
+  border-bottom: 1px solid #555;
+  white-space: nowrap;
+}
+
+nav ul .dropdown-menu a {
+  padding: 8px 20px;
+}
+
+@media screen and (max-width: 548px) {
+  nav {
+    flex-direction: column;
   }
-  
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; 
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo{
-    margin-left: 30px;
-  }
-  .logo img {
-    width: 70px; 
-    height: auto;
-  }
-  
- 
-  /* Style the navigation menu */
+
   nav ul {
-    display: flex;
-    margin-right: 200px;
+    flex-direction: column;
   }
-  
+
   nav ul li {
-    margin-right: 40px; 
-    position: relative;
-  }
- 
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
-  nav a:hover{
-      color: yellow;
-  }
-  
-  /* Style the dropdown menu */
   nav ul .dropdown-menu {
+    position: static;
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: black;
-    border: 1px solid black;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  nav ul li:hover .dropdown-menu {
-    display: block;
-  }
-  
-  nav ul .dropdown-menu li {
-    padding: 8px 16px;
-    text-align: left;
-    background-color: black ;
-    color: black;
-    border-bottom: 1px solid #555;
-    white-space: nowrap;
-  }
-  
-  nav ul .dropdown-menu a {
-    padding: 8px 20px;
-  }
-  
-  @media screen and (max-width: 548px) {
-    nav {
-      flex-direction: column;
-    }
-  
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  
-    nav ul .dropdown-menu {
-      position: static;
-      display: none;
-    }
-  
-    nav ul .dropdown-menu li {
-      border-bottom: none;
-    }
-  
-    nav ul li:hover .dropdown-menu {
-      display: none;
-    }
-  }
-  
-  .rajasection {
-    margin-top: 50px;
-      background-color: yellow;
   }
 
-  .big-brain-time {
-   line-height: 200px;
+  nav ul .dropdown-menu li {
+    border-bottom: none;
   }
-.image-brain{
-   margin-top: 100px;
-   margin-left: 120px;
+
+  nav ul li:hover .dropdown-menu {
+    display: none;
   }
+}
+
+.rajasection {
+  margin-top: 50px;
+  background-color: yellow;
+}
+
+.big-brain-time {
+  line-height: 200px;
+}
+.image-brain {
+  margin-top: 100px;
+  margin-left: 120px;
+}
+/* Abhay css */
+
+.accordion {
+  background-color: #ffffff;
+  color: #132e30;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #333;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ffffff;
+}
+
+.faqContainer {
+  /* background-color: black; */
+  text-align: justify;
+  text-justify: inter-word;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#FAQTitle {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 30px;
+  /* background-color: white; */
+  width: 67%;
+  margin: auto;
+  padding: 20px;
+  /* margin-bottom: 3%; */
+  color: #333;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.accordionContainerStyle {
+  padding: 0% 5% 5% 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.prvacyContainer {
+  background-color: #333;
+  color: white;
+  width: 40%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 20vh;
+  padding: 2% 2% 2% 2%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.privacyTitle {
+  text-align: center;
+  font-size: 30px;
+  background-color: #333;
+  width: 41%;
+
+  margin: auto;
+  margin-right: 20vh;
+  padding: 20px;
+  margin-bottom: 3%;
+
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.aboutContainer {
+  background-color: #333;
+  color: white;
+  width: 40%;
+  margin: auto;
+  text-align: justify;
+  margin-right: 20vh;
+  margin-top: -2vh;
+  text-justify: inter-word;
+  padding: 2% 2% 2% 2%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.aboutTitle {
+  text-align: center;
+  background-color: #333;
+  font-size: 30px;
+  width: 42.5%;
+  margin: auto;
+  margin-right: 20vh;
+  padding: 10px;
+  margin-bottom: 3%;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contactTitle {
+  text-align: center;
+  font-size: 30px;
+  width: 67%;
+  margin: auto;
+  padding: 20px;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contactContainer {
+  color: white;
+  width: 60%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0% 5% 2% 5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+input {
+  width: 50%;
+  padding: 1%;
+  margin: 1%;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#message {
+  width: 50%;
+  height: 30vh;
+  padding: 1%;
+  margin: 1%;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#contactSubmitBtn {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+  margin-left: 31vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#contactSubmitBtn:hover {
+  background-color: green; /* Adjust hover background color as needed */
+  cursor: pointer;
+}
+/* Abhya Css */
