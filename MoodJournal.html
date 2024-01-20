@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Mood Journal</title>
+    <style>
+        body {
+            background-color: #fce505;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:100px;
+        }
+        .moodJ_container{
+            width:70%;
+            max-width:95%;
+        }
+        .moodJtext{
+            text-align: center;
+            margin-bottom: 25px;
+            background-color: #020101;
+            color:white;
+            padding:10px;
+        }
+        .textar{
+            background-color: #020101;
+            color:white;     
+            padding:35px;
+        }
+        #my_story{
+            margin-top: 10px;
+            width:100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../code-cruncher-2109/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../code-cruncher-2109/about.html">About</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#resources">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../code-cruncher-2109/emergency_phNo.html">Emergency Numbers</a></li>
+                        <li><a class="dropdown-item" href="../code-cruncher-2109/mhc.html">Mental Health
+                                Explained</a></li>
+                        <li><a class="dropdown-item" href="../code-cruncher-2109/moodJournal.html">Mood Journal</a></li>
+                        <li><a class="dropdown-item" href="#">Relaxation music</a></li>
+                        <li><a class="dropdown-item" href="#">Moby Music</a></li>
+                        <li><a class="dropdown-item" href="#">Nature Sounds with video</a></li>
+                        <li><a class="dropdown-item" href="#">Adult coloring</a></li>
+                        <li><a class="dropdown-item" href="#">Guided Imagery</a></li>
+                        <li><a class="dropdown-item" href="#">Daily Affirmations</a></li>
+                        <li><a class="dropdown-item" href="#">Guided Mediatoin</a></li>
+                        <li><a class="dropdown-item" href="#">Audio Stories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../code-cruncher-2109/faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="../code-cruncher-2109/contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="../code-cruncher-2109/privacy.html">Privacy</a>
+                </li>
+                <li>
+                    <a href="../code-cruncher-2109/login.html">Login</a>
+                </li>
+                <li>
+                    <a href="../code-cruncher-2109/signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="moodJ_container">
+        <h2 class="moodJtext">Mood Journal</h2>
+        <div class="textar">
+            <label id="release_thought" for="my_story">Release your thoughts...</label><br>
+            <textarea id="my_story" name="my_story" rows="17" cols="33">Jaa Simaran Jaa, Jee Le Apni Zindagi...</textarea>
+        </div>
+        
+    </div>
+</body>
+</html>
