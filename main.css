@@ -289,13 +289,34 @@ input {
   flex-direction: column;
   color: white;
   background-color: black;
-  margin-left: 31vh;
+
+  margin: auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #contactSubmitBtn:hover {
   background-color: green; /* Adjust hover background color as needed */
   cursor: pointer;
 }
+
+.footer-content {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-brands {
+  margin-right: 10px;
+}
+.copyright {
+  margin-right: -150px;
+}
+
+/*Abhya Css */
+
 /* Abhay Css */
 
 
@@ -529,6 +550,7 @@ button {
   max-width:95%;
   display:flex;
   flex-direction: column;
+  margin:auto;
 }
 
 /* prescriptions */
@@ -555,6 +577,7 @@ button {
   max-width:95%;
   display:flex;
   flex-direction: column;
+  margin:auto;
 }
 
 /* Mood Journal */
@@ -562,6 +585,8 @@ button {
 .moodJ_container {
   width: 70%;
   max-width: 95%;
+  margin:auto;
+  margin-top:120px;
 }
 
 .moodJtext {
@@ -591,6 +616,8 @@ button {
   max-width: 95%;
   display: flex;
   flex-direction: column;
+  margin:auto;
+
 }
 
 .phoneBox {
@@ -616,3 +643,4 @@ button {
 }
 
 /* Prince */
+
