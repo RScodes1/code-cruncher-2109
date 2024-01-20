@@ -46,6 +46,15 @@ async function addContact() {
       body: JSON.stringify(contact),
     });
     let data = await res.json();
+    if (res.ok) {
+      alert('Your message has been stored successfully.');
+    } else {
+      alert('There was an error storing your message. Please try again.');
+    }
+    firstName.value = '';
+    lastName.value = '';
+    email.value = '';
+    message.value = '';
     console.log(data);
   } catch (error) {
     console.log(error);
