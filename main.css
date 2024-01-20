@@ -374,7 +374,7 @@ input {
   margin-bottom: 0;
 }
 
-button {
+.lgnBtn {
   background-color: #2dd11e;
   color: #fff;
   padding: 10px;
@@ -508,8 +508,14 @@ button {
   margin-bottom: 15px;
   padding:25px 0;
 }
+.mhc_container a {
+  text-decoration: none;
+  color:#fce505
+}
 #mhc{
   margin-bottom:30px;
+}
+#mhc a{
   color:white;
 }
 .mhc_container{
@@ -518,4 +524,31 @@ button {
   display:flex;
   flex-direction: column;
 }
+
+/* prescriptions */
+.presBox{
+  border:1px solid black;
+  background-color:  #020101;
+  color:#fce505;
+  text-align: center;
+  margin-bottom: 15px;
+  padding:25px 0;
+}
+.presBox a{
+  text-decoration: none;
+  color:#fce505;
+}
+#pcrip{
+  margin-bottom:30px;
+}
+#pcrip a{
+  color:white;
+}
+.prescriptions_container{
+  width:70%;
+  max-width:95%;
+  display:flex;
+  flex-direction: column;
+}
+
 /* Prince */
