@@ -296,4 +296,259 @@ input {
   background-color: green; /* Adjust hover background color as needed */
   cursor: pointer;
 }
-/* Abhya Css */
+/* Abhay Css */
+
+
+/* Prince */
+
+/* login */
+
+.top_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+
+}
+
+.login_text {
+  text-align: center;
+  background-color: #020101;
+  color: white;
+  margin-bottom: 10px;
+  max-width: 75%;
+  width: 40%;
+  padding: 10px 20px;
+  border-radius: 8px;
+
+}
+
+.login-container {
+  max-width: 75%;
+  width: 40%;
+  padding: 20px;
+  background-color: #020101;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.remember-me {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+}
+
+.remember-me>input {
+  width: 15px;
+  margin-bottom: 5px;
+}
+
+.remember-me>label {
+  margin-bottom: 0;
+}
+
+.lgnBtn {
+  background-color: #2dd11e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sign_up {
+  display: block;
+  margin: 10px 0;
+}
+
+.forgot-pw {
+  margin-top: 10px;
+}
+
+.sm-login {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-login button {
+
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.email-login {
+  background-color: rgba(47, 17, 53, 0.849);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+
+.fb-login {
+  background-color: rgba(37, 57, 235, 0.849);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.google-login {
+  background-color: rgba(255, 11, 11, 0.849);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* signup */
+
+.top_signup{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  max-width:100%;
+  /* border:2px solid yellow; */
+}
+.signup_text{
+  text-align: center;
+  background-color: #020101;
+  color:white;
+  margin-bottom:10px;
+  max-width:75%;
+  width:40%;
+  padding: 10px 20px ;
+  border-radius: 8px;
+
+}
+
+.signup-container {
+  max-width: 75%;
+  width: 39%;
+  padding: 30px;
+  background-color: #020101;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color:  #7b1ed1;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Mental Health Conditions */
+.mhcBox{
+  border:1px solid black;
+  background-color:  #020101;
+  color:#fce505;
+  text-align: center;
+  margin-bottom: 15px;
+  padding:25px 0;
+}
+.mhc_container a {
+  text-decoration: none;
+  color:#fce505
+}
+#mhc{
+  margin-bottom:30px;
+}
+#mhc a{
+  color:white;
+}
+.mhc_container{
+  width:70%;
+  max-width:95%;
+  display:flex;
+  flex-direction: column;
+}
+
+/* prescriptions */
+.presBox{
+  border:1px solid black;
+  background-color:  #020101;
+  color:#fce505;
+  text-align: center;
+  margin-bottom: 15px;
+  padding:25px 0;
+}
+.presBox a{
+  text-decoration: none;
+  color:#fce505;
+}
+#pcrip{
+  margin-bottom:30px;
+}
+#pcrip a{
+  color:white;
+}
+.prescriptions_container{
+  width:70%;
+  max-width:95%;
+  display:flex;
+  flex-direction: column;
+}
+
+/* Prince */
