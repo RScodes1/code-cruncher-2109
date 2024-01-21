@@ -214,24 +214,24 @@
       ],
     
       
-        "affirmations" :
+ "affirmations" :
         [
           {
             "id": "1",
             "image" : "https://blog.gratefulness.me/content/images/2023/01/ram-dass5-1.jpg",
-            "name": "Ram Dass",
+            "name": "Aristotle",
             "description" : "Opportunities,strength, ability."
             },
             {
               "id": "2",
               "image" : "https://blog.gratefulness.me/content/images/2023/01/ram-dass3.jpg",
-              "name": "Ram Dass",
+              "name": "Imannuel Kent",
               "description" : "Awareness."
               },
           {
             "id": "3",
             "image" : "https://jessicadimas.com/wp-content/uploads/2021/03/ram-dass-quotes-the-light.png",
-            "name": "Ram Dass",
+            "name": "Socrates",
             "description" : "Teacher,light,lessons."
             },
             {
@@ -243,7 +243,7 @@
               {
                 "id": "5",
                 "image" : "https://positivethinkingmind.com/wp-content/uploads/2020/05/ram-dass-quotes720x480.jpg",
-                "name": "Ram Dass",
+                "name": "Rene Descartes",
                 "description" : "ability."
                 },
             {

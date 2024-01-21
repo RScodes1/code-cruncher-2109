@@ -12,7 +12,7 @@
     <title>Mood Journal</title>
     <style>
         body {
-            background-color: #fce505;
+            background-color: rgb(72, 231, 72);
             font-family: 'Arial', sans-serif;
             margin-top: 100px;
         }
@@ -24,60 +24,58 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="logo">
+          <img src="logo.png" alt="logo" />
         </div>
         <nav class="navbar">
-            <ul>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li>
+              <a href="#resources">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="emergency_phNo.html">Emergency Numbers</a></li>
+                <li><a class="dropdown-item" href="mhc.html">Mental Health Explained</a></li>
+                <li><a class="dropdown-item" href="prescriptions.html">Prescriptions</a></li>
+                <li><a class="dropdown-item" href="MoodJournal.html">Mood Journal</a></li>
+                <li><a class="dropdown-item" href="#">Relaxation music</a></li>
+                <li><a class="dropdown-item" href="#">Moby Music</a></li>
                 <li>
-                    <a href="../code-cruncher-2109/index.html">Home</a>
+                  <a class="dropdown-item" href="#">Nature Sounds with video</a>
                 </li>
-                <li>
-                    <a href="../code-cruncher-2109/about.html">About</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#resources">Resources</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../code-cruncher-2109/emergency_phNo.html">Emergency
-                                Numbers</a></li>
-                        <li><a class="dropdown-item" href="../code-cruncher-2109/mhc.html">Mental Health Explained</a>
-                        </li>
-                        <li><a class="dropdown-item" href="../code-cruncher-2109/prescriptions.html">Prescriptions</a>
-                        </li>
-                        <li><a class="dropdown-item" href="../code-cruncher-2109/moodJournal.html">Mood Journal</a></li>
-                        <li><a class="dropdown-item" href="#">Relaxation music</a></li>
-                        <li><a class="dropdown-item" href="#">Moby Music</a></li>
-                        <li><a class="dropdown-item" href="#">Nature Sounds with video</a></li>
-                        <li><a class="dropdown-item" href="#">Adult coloring</a></li>
-                        <li><a class="dropdown-item" href="#">Guided Imagery</a></li>
-                        <li><a class="dropdown-item" href="#">Daily Affirmations</a></li>
-                        <li><a class="dropdown-item" href="#">Guided Mediatoin</a></li>
-                        <li><a class="dropdown-item" href="#">Audio Stories</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="../code-cruncher-2109/faq.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="../code-cruncher-2109/contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="../code-cruncher-2109/privacy.html">Privacy</a>
-                </li>
-                <li>
-                    <a href="../code-cruncher-2109/login.html">Login</a>
-                </li>
-                <li>
-                    <a href="../code-cruncher-2109/signup.html">Sign Up</a>
-                </li>
-            </ul>
+                <li><a class="dropdown-item" href="index.html#data-list-wrapper-AdultColoring">Adult coloring</a></li>
+                <li><a class="dropdown-item" href="#">Guided Imagery</a></li>
+                <li><a class="dropdown-item" href="#">Daily Affirmations</a></li>
+                <li><a class="dropdown-item" href="#guidedMeditation">Guided Mediatoin</a></li>
+                <li><a class="dropdown-item" href="#audioStories">Audio Stories</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="index.html#privacy">Privacy</a>
+            </li>
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+            <li>
+              <a href="signup.html">Sign Up</a>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
-
-    <div class="moodJ_container">
+ <div class="moodJ_container">
         <h2 class="moodJtext">Mood Journal</h2>
         <div class="textar">
             <label id="release_thought" for="my_story">Release your thoughts...</label><br>
@@ -109,6 +107,9 @@
           <div></div>
         </div>
       </footer>
+
+
 </body>
+
 
 </html>
