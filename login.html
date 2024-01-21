@@ -87,12 +87,12 @@ background-color: yellow;">
         <div class="login-container">
             <form class="login-form">
                 <div class="form-group">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Email">
+                    <label for="Lgnemail"></label>
+                    <input type="email" id="Lgnemail" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <label for="password"></label>
-                    <input type="password" id="password" placeholder="Password">
+                    <label for="Lgnpassword"></label>
+                    <input type="password" id="Lgnpassword" placeholder="Password">
                 </div>
                 <div class="remember-me" id="remember_me">
                     <input type="checkbox" id="remember">
@@ -129,6 +129,49 @@ background-color: yellow;">
           <div></div>
         </div>
       </footer>
+
+      <script>
+
+        let loginEmail = document.getElementById("Lgnemail");
+        let loginPassword = document.getElementById("Lgnpassword");
+
+        let loginBtn = document.querySelector(".lgnBtn");
+
+        loginBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (loginEmail.value === "" || loginPassword.value === "") {
+            alert("Please fill all the fields");
+          } else {
+            addLogin();
+          }
+          }
+        );
+
+        async function addLogin() {
+          try {
+            let userDataArray = JSON.parse(localStorage.getItem("userDataArray")) || [];
+            let loginData = {
+              Email: loginEmail.value,
+              Password: loginPassword.value,
+            };
+            console.log(loginData);
+            userDataArray.push(loginData);
+            localStorage.setItem("userDataArray", JSON.stringify(userDataArray));
+
+            if (userDataArray) {
+              console.log("Existing user data array:", userDataArray);
+            } else {
+              console.log("No existing user data array found");
+            
+            }
+            }
+            catch(err){
+                console.log(err);
+            }
+          }
+        
+
+      </script>
 </body>
 
 </html>

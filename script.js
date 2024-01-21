@@ -69,3 +69,7 @@ contactSubmitBtn.addEventListener("click", (e) => {
   console.log(email.value);
   console.log(message.value);
 });
+
+
+
+// signup part
