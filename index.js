@@ -4,7 +4,6 @@ let AffirmUrl = `https://mock-final-copy-api.onrender.com/affirmations`;
 let ContactUrl = `https://mock-final-copy-api.onrender.com/contacts`;
 let ThoughtUrl = `https://mock-final-copy-api.onrender.com/thoughts`;
 
-
 let limit = 5;
 
 let queryParams = `_page=1&_limit=5`;
@@ -92,7 +91,7 @@ function pagination(totalPages, limit, queryParams){
 let currIndex = 0;
 let affirmations = [];
 
-async function fetchImages(){
+async function fetchImagessssss(){
     try {
         let res = await fetch(AffirmUrl);
         let data = await res.json();
@@ -170,5 +169,122 @@ backwardBtn.addEventListener('click', () => {
     showImage(currIndex);
 });
 
-fetchImages();
+fetchImagessssss();
 
+let currentIndex = 0;
+let data;
+        function fetchImage() {
+          fetch('https://mock-final-copy-api.onrender.com/mh-media')
+            .then(response => response.json())
+            .then(data1 => {data=data1;displayImage(data1)})
+            .catch(error => console.error('Error fetching data:', error));
+        }
+      
+        function displayImage(data) {
+          const gmImageDiv = document.getElementById('gmImage');
+          gmImageDiv.innerHTML = '';
+      
+          const imageObject = data[currentIndex];
+          const imageElement = document.createElement('img');
+          imageElement.src = imageObject.image;
+          gmImageDiv.appendChild(imageElement);
+      
+          const linkElement = document.createElement('a');
+          linkElement.href = imageObject.link;
+          linkElement.target="_blank";
+          linkElement.textContent = imageObject.name;
+          gmImageDiv.appendChild(linkElement);
+        }
+      
+        function prevImage() {
+          currentIndex = (currentIndex - 1 + data.length) % data.length;
+          displayImage(data);
+        }
+      
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % data.length;
+          displayImage(data);
+        }
+
+        fetchImage();
+
+/*Guided Meditation End*/
+/*Audio Story Start*/
+
+const itemsPerPage = 1;
+let currentPage = 1;
+let imageData;
+function fetchImages() {
+    fetch('https://mock-final-copy-api.onrender.com/imagery-Data')
+      .then(response => response.json())
+      .then(data1 => {imageData=data1;displayImages(data1);generatePagination()})
+      .catch(error => console.error('Error fetching data:', error));
+  }
+
+function displayImages() {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+
+    const gmImageDiv = document.getElementById('asImage');
+    gmImageDiv.innerHTML = ''; 
+
+    for (let i = startIndex; i < endIndex; i++) {
+        if (imageData[i]) {
+            const imageObject = imageData[i];
+            //const imageContainer = document.createElement('div');
+            //imageContainer.className = 'image-container';
+
+            const imageElement = document.createElement('img');
+            imageElement.src = imageObject.image;
+            //imageContainer.appendChild(imageElement);
+            gmImageDiv.appendChild(imageElement);
+
+            const linkElement = document.createElement('a');
+            linkElement.href = imageObject.link;
+            linkElement.target="_blank";
+            linkElement.textContent = imageObject.name;
+            //linkElement.textContent = imageObject.link;
+            //imageContainer.appendChild(linkElement);
+            gmImageDiv.appendChild(linkElement);
+
+            //gmImageDiv.appendChild(imageElement,linkElement);
+        }
+    }
+}
+
+function generatePagination() {
+    const totalPages = Math.ceil(imageData.length / itemsPerPage);
+    const paginationElement = document.getElementById('pagination');
+    paginationElement.innerHTML = '';
+
+    for (let i = 1; i <= totalPages; i++) {
+        const li = document.createElement('li');
+        li.textContent = i;
+        li.addEventListener('click', () => {
+            currentPage = i;
+            displayImages();
+            updatePaginationStyle();
+        });
+
+        if (i === currentPage) {
+            li.style.fontWeight = 'bold';
+        }
+
+        paginationElement.appendChild(li);
+    }
+}
+
+function updatePaginationStyle() {
+    const paginationElement = document.getElementById('pagination');
+    const paginationItems = paginationElement.getElementsByTagName('li');
+
+    for (let i = 0; i < paginationItems.length; i++) {
+        if (i + 1 === currentPage) {
+            paginationItems[i].style.fontWeight = 'bold';
+        } else {
+            paginationItems[i].style.fontWeight = 'normal';
+        }
+    }
+}
+
+fetchImages();

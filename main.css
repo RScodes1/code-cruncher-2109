@@ -737,14 +737,14 @@ button {
 .presBox{
   border:1px solid black;
   background-color:  #020101;
-  color:#fce505;
+  color:  #fce505;
   text-align: center;
   margin-bottom: 15px;
   padding:25px 0;
 }
 .presBox a{
   text-decoration: none;
-  color:#fce505;
+  color:rgb(72, 231, 72);
 }
 #pcrip{
   margin-bottom:30px;
@@ -757,6 +757,81 @@ button {
   max-width:95%;
   display:flex;
   flex-direction: column;
+}
+
+.emergency_container {
+  width: 70%;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+}
+
+.phoneBox {
+  border: 1px solid black;
+  background-color: #020101;
+  color: #fce505;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 25px 0;
+}
+
+.emergency_container a {
+  text-decoration: none;
+  color: #fce505
+}
+
+#phone {
+  margin-bottom: 30px;
+}
+
+#phone a {
+  color: white;
+}
+
+
+.moodJ_container {
+  width: 70%;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.moodJtext {
+  text-align: center;
+  margin-bottom: 25px;
+  background-color: #020101;
+  color: white;
+  padding: 10px;
+}
+
+.textar {
+  background-color: #020101;
+  color: white;
+  padding: 35px;
+}
+
+#my_story {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.mjbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mj_saveBtn {
+  background-color: #2dd11e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+
 }
 
 /* Prince */
@@ -781,4 +856,133 @@ button {
 }
 .copyright {
   margin-right: -150px;
+}
+
+/* sandesh css part
+*/
+
+#guidedMeditation{
+  /*width: 100%;*/
+  border: 2px solid black;
+  padding: 50px 0px 50px 280px;
+  background-color: rgb(178,255,102);
+}
+#gmTitle{
+  display: flex;
+  width:  1000px;
+  height: 50px;
+  /*border: 2px solid blue;*/
+  margin-bottom: 50px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
+#gmContent{
+  position: relative;
+  width:  1000px;
+  height: 500px;
+  /*border: 2px solid red;*/
+  background-color: black;
+}
+#gmImage{
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  bottom: 0px;
+  left: 200px;
+  /*border: 2px solid green;*/
+  border-radius: 20px;
+}
+#gmImage>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+#gmImage>a{
+  color: white;
+  text-decoration: none;
+}
+#prevBtn, #nextBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+#prevBtn {
+  left: 10px;
+}
+#nextBtn {
+  right: 10px;
+}
+
+/*Audio Stories*/
+#audioStories {
+  border: 2px solid black;
+  padding: 50px 0px 50px 280px;
+  background-color: rgb(178, 255, 102);
+  position: relative;
+}
+
+#asTitle {
+  display: flex;
+  width: 1000px;
+  height: 50px;
+  margin-bottom: 50px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+#asContent {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  background-color: black;
+}
+
+#asImage {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  bottom: 0px;
+  left: 200px;
+  /*border: 2px solid green;
+  border-radius: 20px;*/
+  overflow: hidden;
+}
+
+#asImage img {
+  width: 100%;
+  height: 95%;
+  /*object-fit: cover;*/
+}
+#asImage a{
+  color: white;
+  text-decoration: none;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pagination li {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 16px;
+  color: white;
 }

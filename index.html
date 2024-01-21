@@ -40,18 +40,18 @@ background-color: rgb(72, 231, 72);
                 <li>
                     <a href="#resources">Resources</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Emergency Numbers</a></li>
+                        <li><a class="dropdown-item" href="emergency_phNo.html">Emergency Numbers</a></li>
                         <li><a class="dropdown-item" href="mhc.html">Mental Health Explained</a></li>
                         <li><a class="dropdown-item" href="prescriptions.html">Prescriptions</a></li>
-                        <li><a class="dropdown-item" href="#">Mood Journal</a></li>
+                        <li><a class="dropdown-item" href="MoodJournal.html">Mood Journal</a></li>
                         <li><a class="dropdown-item" href="#">Relaxation music</a></li>
                         <li><a class="dropdown-item" href="#">Moby Music</a></li>
                         <li><a class="dropdown-item" href="#">Nature Sounds with video</a></li>
                         <li><a class="dropdown-item" href="#data-list-wrapper-AdultColoring">Adult coloring</a></li>
                         <li><a class="dropdown-item" href="#">Guided Imagery</a></li>
                         <li><a class="dropdown-item" href="#affirmations">Daily Affirmations</a></li>
-                        <li><a class="dropdown-item" href="#">Guided Meditation</a></li>
-                        <li><a class="dropdown-item" href="#">Audio Stories</a></li>
+                        <li><a class="dropdown-item" href="#guidedMeditation">Guided Meditation</a></li>
+                        <li><a class="dropdown-item" href="#audioStories">Audio Stories</a></li>
                     </ul>
                 </li>
                 <li>
@@ -265,6 +265,28 @@ background-color: rgb(72, 231, 72);
            <br>
            <br>
            <br>
+
+           <div id="guidedMeditation">
+            <div id="gmTitle">
+                <span>Guided Meditation</span>
+            </div>
+            <div id="gmContent">
+                <button id="prevBtn" onclick="prevImage()">Previous</button>
+                <div id="gmImage">
+                    <!--<img src="" alt="">-->
+                </div>
+                <button id="nextBtn" onclick="nextImage()">Next</button>
+            </div>
+        </div>
+        <div id="audioStories">
+            <div id="asTitle">
+                <span>Audio Stories</span>
+            </div>
+            <div id="asContent">
+                <div id="asImage"></div>
+                <ul class="pagination" id="pagination"></ul>
+            </div>
+        </div>
            
         <script src="index.js"></script>
 </body>
