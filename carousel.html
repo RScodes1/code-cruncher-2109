@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2AmJhvHfKrv5OKDyI9JSBJV39rqsfWu1dvT11fEHOaRubjiPL2Og8zTlU0nFQ63S3_CE&usqp=CAU');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #4CAF50;
+        }
+
+        #carousel {
+            position: relative;
+            overflow: hidden;
+            max-width: 60%;
+            margin: 20px auto;
+
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: #4CAF50;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section id="carousel">
+        <div class="slides">
+            <img src="https://weblium.com/blog/wp-content/uploads/2022/03/Best-Therapist-Websites.png"
+                alt="Image 1">
+            <img src="https://www.invajy.com/wp-content/uploads/2022/04/Mental-health-Quotes-3.jpg" alt="Image 2">
+            <img src="https://quotefancy.com/media/wallpaper/1600x900/7633923-Mary-Morrison-Quote-Sometimes-you-have-to-give-a-little-push-one.jpg"
+                alt="Image 3">
+                <img src="https://mobile-cuisine.com/wp-content/uploads/2023/05/mental-health-gd336bcde1_1920.jpeg"
+                alt="Image 4">
+            <img src="https://fiverr-res.cloudinary.com/videos/so_8.298465,t_main1,q_auto,f_auto/ysa5vctn9z8xwkuz0zgd/compose-music-specifically-for-meditation-yoga-healing-relaxation.png" alt="Image 5">
+            <img src="https://manhattanmentalhealthcounseling.com/wp-content/uploads/2019/07/4-Meditation-Techniques-that-Can-Improve-Awareness-and-Mental-Health.jpeg"
+                alt="Image 6">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slides img');
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.display = (i === index) ? 'block' : 'none';
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            function startCarousel() {
+                setInterval(nextSlide, 3000); 
+            }
+
+            document.querySelector('.next').addEventListener('click', nextSlide);
+            document.querySelector('.prev').addEventListener('click', prevSlide);
+
+            startCarousel();
+        });
+    </script>
+</body>
+
+</html>
