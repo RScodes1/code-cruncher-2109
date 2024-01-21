@@ -87,3 +87,88 @@ function pagination(totalPages, limit, queryParams){
     }
      
 }
+
+
+let currIndex = 0;
+let affirmations = [];
+
+async function fetchImages(){
+    try {
+        let res = await fetch(AffirmUrl);
+        let data = await res.json();
+        console.log(data);
+        affirmations = data.slice(0,23);
+        showImage(currIndex);
+    }
+    catch(error){
+     console.log(error);
+    }
+}
+
+const imageBox = document.getElementById('image-box');
+
+const forwardBtn = document.getElementById('forward-btn');
+const backwardBtn = document.getElementById('backward-btn');
+
+function createAffirmationBox(imageUrl, name, description) {
+
+    const affirmationContainer = document.createElement('div');
+    affirmationContainer.className = 'affirmation-container';
+
+        const image = document.createElement('img');
+        image.src = imageUrl;
+        image.alt = 'Affirmation Image';
+
+        const affirmationInfor = document.createElement('div');
+        affirmationInfor.className =  "affirmation-info";
+
+
+        const affirmationName = document.createElement('h3');
+        affirmationName.className =  "affirmation-name";
+        affirmationName.textContent = name;
+
+        const affirmationDescription = document.createElement('p');
+        affirmationDescription.className =  "affirmation-description";
+        affirmationDescription.textContent = description;
+
+        affirmationInfor.append(affirmationName);
+        affirmationInfor.append(affirmationDescription);
+        
+        affirmationContainer.append(image);
+        affirmationContainer.append(affirmationInfor);
+
+       return affirmationContainer;
+    
+}
+
+function showImage(index) {
+
+    const affirmation = affirmations[index];
+    const imageUrl = affirmation.image;
+    const name = affirmation.name;
+    const description = affirmation.description;
+
+    // Create the affirmation box
+    const affirmationBox = createAffirmationBox(imageUrl, name, description);
+
+    // Clear existing content in the image-box div
+    imageBox.innerHTML = '';
+
+    // Append the new affirmation box to the image-box div
+    imageBox.appendChild(affirmationBox);
+
+}
+
+
+forwardBtn.addEventListener('click',() => {
+    currIndex = (currIndex + 1) % affirmations.length;
+    showImage(currIndex);
+})
+
+backwardBtn.addEventListener('click', () => {
+    currIndex = (currIndex - 1 + affirmations.length) % affirmations.length;
+    showImage(currIndex);
+});
+
+fetchImages();
+

@@ -7,6 +7,7 @@ li {
   font-family: "Courier New", Courier, monospace;
 }
 
+
 header {
   position: fixed;
   top: 0;
@@ -47,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-  color: yellow;
+  color: rgb(72, 231, 72);
 }
 
 /* Style the dropdown menu */
@@ -108,12 +109,12 @@ nav ul .dropdown-menu a {
 
 .rajasection {
   margin-top: 50px;
-  background-color: yellow;
+  background-color: rgb(72, 231, 72);
 }
 
 .raja-section-2 {
   margin-top: 50px;
-  background-color: yellow;
+  background-color: rgb(72, 231, 72);
 }
 
 .big-brain-time {
@@ -122,6 +123,13 @@ nav ul .dropdown-menu a {
 .image-brain {
   margin-top: 100px;
   margin-left: 120px;
+  animation: slideLeftToRight 7s ease-in-out infinite;
+
+}
+@keyframes slideLeftToRight {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(500px); }
+  100% { transform: translateX(0); }
 }
 
 .raja-section-2{
@@ -175,7 +183,7 @@ nav ul .dropdown-menu a {
     flex-direction: row;
     gap: 9%;
     color: white;
-    background-color: yellow;
+    background-color: rgb(72, 231, 72);
     justify-content: center; 
     margin-top: 30px;   
 }
@@ -186,11 +194,110 @@ nav ul .dropdown-menu a {
 
 }
 
+
+/*   affirmation-raja */
+.affirmations{
+    background-color: rgb(72, 231, 72);
+    margin-top: 1px;
+
+
+}
+.affirm-page-data{
+    display: flex;
+    flex-direction: column;
+    
+}
+.affirm{
+     background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+   
+}
+
+.affirm-box{
+     display: flex;
+     background-color: black;
+     align-items: center;
+     flex-direction: row;
+     gap: 2%;
+     width: 80%;
+     justify-content: space-between;
+     margin-top: 50px;
+     margin-bottom: 20px;
+     padding: 30px;
+    margin-left: 100px;
+    
+}
+
+
+#image-box {
+  width: 400px;
+  height: 400px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column; /* Display the image and info in a column */
+  align-items: center;
+  justify-content: center;
+}
+
+#image-box img {
+    height: 200px;
+   margin-top : 70px;
+   margin-left: 20px;
+    width: 200px;
+}
+
+.affirmation-info {
+  text-align: center;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+#affirmation-name {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+#affirmation-description {
+  font-size: 0.9em;
+  
+  color: #555;
+}
+
+#backward-btn{
+       background-color: green;
+       color: white;
+       font-size: 18px;
+       font-family: 'Courier New', Courier, monospace;
+       padding: 10 20px;
+       font-weight: bold;
+
+}
+#forward-btn{
+  background-color: green;
+       color: white;
+       font-family: 'Courier New', Courier, monospace;
+       padding: 10 20px;
+       font-size: 18px;
+       font-weight: bold;
+}
+
+.affirmation-name{
+     font-size: 24px;
+
+}
+
+.affirmation-description{
+  font-size: 20px;
+
+}
 /* Abhay css */
 
 .accordion {
   background-color: #ffffff;
-  color: #132e30;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -208,13 +315,13 @@ nav ul .dropdown-menu a {
 
 .active,
 .accordion:hover {
-  background-color: #333;
+  background-color: black;
 }
 
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: #333;
+  background-color:black;
   color: white;
   overflow: hidden;
 }
@@ -245,34 +352,69 @@ nav ul .dropdown-menu a {
   margin: auto;
   padding: 20px;
   /* margin-bottom: 3%; */
-  color: #333;
+  color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 .accordionContainerStyle {
   padding: 0% 5% 5% 5%;
   padding-left: 5%;
   padding-right: 5%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+@keyframes smoothOpen {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 500px; /* Adjust as needed */
+    opacity: 1;
+  }
+}
+
+@keyframes smoothClose {
+  0% {
+    max-height: 500px; /* Adjust as needed */
+    opacity: 1;
+  }
+  100% {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+.accordion + .panel {
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.2s ease-out; /* Adjust durations as needed */
+}
+
+.accordion.active + .panel {
+  animation: smoothOpen 2s ease-out forwards;
+}
+
+.accordion:not(.active) + .panel {
+  animation: smoothClose 2s ease-out forwards;
+}
+
 .prvacyContainer {
-  background-color: #333;
+  background-color: black;
   color: white;
-  width: 40%;
+  width: 60%;
   margin: auto;
   text-align: justify;
   text-justify: inter-word;
-  margin-right: 20vh;
   padding: 2% 2% 2% 2%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .privacyTitle {
   text-align: center;
   font-size: 30px;
-  background-color: #333;
-  width: 41%;
+  background-color: black;
+  width: 60%;
 
   margin: auto;
-  margin-right: 20vh;
   padding: 20px;
   margin-bottom: 3%;
 
@@ -280,28 +422,26 @@ nav ul .dropdown-menu a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .aboutContainer {
-  background-color: #333;
+  background-color: black;
   color: white;
-  width: 40%;
   margin: auto;
   text-align: justify;
-  margin-right: 20vh;
+  width: 60%;
   margin-top: -2vh;
   text-justify: inter-word;
   padding: 2% 2% 2% 2%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+font-family: 'Courier New', Courier, monospace;
 }
 .aboutTitle {
   text-align: center;
-  background-color: #333;
+  background-color: black;
   font-size: 30px;
-  width: 42.5%;
+  width: 60%;
   margin: auto;
-  margin-right: 20vh;
   padding: 10px;
   margin-bottom: 3%;
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 .contactTitle {
   text-align: center;
@@ -310,7 +450,7 @@ nav ul .dropdown-menu a {
   margin: auto;
   padding: 20px;
   color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 .contactContainer {
   color: white;
@@ -319,7 +459,7 @@ nav ul .dropdown-menu a {
   text-align: justify;
   text-justify: inter-word;
   padding: 0% 5% 2% 5%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 input {
   width: 50%;
@@ -331,7 +471,7 @@ input {
   display: flex;
   flex-direction: column;
   margin: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 #message {
   width: 50%;
@@ -345,7 +485,7 @@ input {
   flex-direction: column;
   margin: auto;
   font-size: 18px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 #contactSubmitBtn {
   margin-top: 10px;
@@ -514,7 +654,7 @@ input {
   flex-direction: column;
   width:100%;
   max-width:100%;
-  /* border:2px solid yellow; */
+  /* border:2px solid rgb(72, 231, 72); */
 }
 .signup_text{
   text-align: center;
@@ -620,3 +760,25 @@ button {
 }
 
 /* Prince */
+.footer-content {
+  position: fixed;
+  bottom: 0;
+  left : 0;
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000; 
+}
+.fa-brands {
+  margin-right: 10px;
+}
+.copyright {
+  margin-right: -150px;
+}
