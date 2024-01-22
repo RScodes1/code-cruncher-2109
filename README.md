@@ -44,5 +44,17 @@ The names of the contributors to this project are:-
 - Sandesh More.
 
 ## snapshots of the website
+index page
 ![image-index](image1)
 
+contact page
+![contact](image2)
+
+login page
+![login](image3)
+
+audio page
+![audio](image4)
+
+dont know
+![](image5)
