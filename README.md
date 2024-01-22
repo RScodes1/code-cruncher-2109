@@ -50,7 +50,7 @@ index page
 about page
 ![contact](image2)
 
-login page
+faq page
 ![login](image3)
 
 contact page
