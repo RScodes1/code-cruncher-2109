@@ -16,7 +16,7 @@ The webpage link is:-
 
 ## Introduction
 
-- Welcome to the Blog Webpage! - The scope of the project is to create awareness about mental health for the Indian audiences because how little people care about the overall well being of individuals keeping physical health apart. From this website and our efforts we want to create that impact among masses and along with it, set up necessary treatments so people want to visit our website very frequently.
+- Welcome to the Blog Webpage! iMind Webpage- The scope of the project is to create awareness about mental health for the Indian audiences because how little people care about the overall well being of individuals keeping physical health apart. From this website and our efforts we want to create that impact among masses and along with it, set up necessary treatments so people want to visit our website very frequently.
 
 ## Features
 
