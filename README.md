@@ -42,3 +42,7 @@ The names of the contributors to this project are:-
 - Abhaysinh Gaikwad.
 - Prince Kumar Diwakar.
 - Sandesh More.
+
+## snapshots of the website
+![image-index](image1.png)
+
