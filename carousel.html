@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d28836e875.js" crossorigin="anonymous"></script>
+    <script
+    src="https://kit.fontawesome.com/7bb2910194.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Carousel Images</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel = "icon" type = "png" href = "imind--2.png">
+    <link rel="shortcut icon" type="png" href= "imind--2.png">
+    <script
+    src="https://kit.fontawesome.com/7bb2910194.js"
+    crossorigin="anonymous"
+  ></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('brain.png');
+            background-size: cover;
+            background-position: center;
+            background-color: #4CAF50;
+        }
+
+        #carousel {
+            position: relative;
+            overflow: hidden;
+            max-width: 60%;
+            margin: 20px auto;
+
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: #4CAF50;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#resources">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="emergency_phNo.html">Emergency Numbers</a></li>
+                        <li><a class="dropdown-item" href="mhc.html">Mental Health Explained</a></li>
+                        <li><a class="dropdown-item" href="prescriptions.html">Prescriptions</a></li>
+                        <li><a class="dropdown-item" href="MoodJournal.html">Mood Journal</a></li>
+                        <li><a class="dropdown-item" href="#">Relaxation music</a></li>
+                        <li><a class="dropdown-item" href="carousel.html">Carousels</a></li>
+                        <li><a class="dropdown-item" href="#data-list-wrapper-AdultColoring">Adult coloring</a></li>
+                        <li><a class="dropdown-item" href="#affirmations">Daily Affirmations</a></li>
+                        <li><a class="dropdown-item" href="#guidedMeditation">Guided Meditation</a></li>
+                        <li><a class="dropdown-item" href="#audioStories">Audio Stories</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="#privacy">Privacy</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <br><br><br>
+
+    <section id="carousel">
+        <div class="slides">
+            <img src="https://weblium.com/blog/wp-content/uploads/2022/03/Best-Therapist-Websites.png"
+                alt="Image 1">
+            <img src="https://www.invajy.com/wp-content/uploads/2022/04/Mental-health-Quotes-3.jpg" alt="Image 2">
+            <img src="https://quotefancy.com/media/wallpaper/1600x900/7633923-Mary-Morrison-Quote-Sometimes-you-have-to-give-a-little-push-one.jpg"
+                alt="Image 3">
+                <img src="https://mobile-cuisine.com/wp-content/uploads/2023/05/mental-health-gd336bcde1_1920.jpeg"
+                alt="Image 4">
+            <img src="https://fiverr-res.cloudinary.com/videos/so_8.298465,t_main1,q_auto,f_auto/ysa5vctn9z8xwkuz0zgd/compose-music-specifically-for-meditation-yoga-healing-relaxation.png" alt="Image 5">
+            <img src="https://manhattanmentalhealthcounseling.com/wp-content/uploads/2019/07/4-Meditation-Techniques-that-Can-Improve-Awareness-and-Mental-Health.jpeg"
+                alt="Image 6">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+    <footer>
+        <div class="footer-content">
+          <div class="inconsdiv">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i
+              class="fa-solid fa-cloud"
+              style="color: #ffffff; margin-right: 10px"
+            ></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-spotify"></i>
+            <span>Subscribe</span>
+          </div>
+          <p>Go To Your Happy Place</p>
+          <div class="copyright">&copy; 2022 iMind. All rights reserved</div>
+          <div></div>
+        </div>
+      </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slides img');
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.display = (i === index) ? 'block' : 'none';
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            function startCarousel() {
+                setInterval(nextSlide, 3000); 
+            }
+
+            document.querySelector('.next').addEventListener('click', nextSlide);
+            document.querySelector('.prev').addEventListener('click', prevSlide);
+
+            startCarousel();
+        });
+    </script>
+</body>
+
+</html>

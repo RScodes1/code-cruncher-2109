@@ -19,7 +19,9 @@
 </head>
 <style>
     body {
-        background-color:rgb(72, 231, 72);
+        background-image: url('brain.png');
+        background-repeat: no-repeat;
+        background-color: rgb(72, 231, 72);
         font-family: 'Arial', sans-serif;
         display: flex;
         align-items: center;
@@ -28,11 +30,7 @@
     }
 </style>
 
-<body style="background-image: url('brain.png');
-background-repeat: no-repeat;
-background-size: 50%;
-background-position: left;
-background-color: yellow;">
+<body>
     <header>
         <div class="logo">
             <img src="logo.png" alt="logo">
@@ -43,10 +41,7 @@ background-color: yellow;">
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
+                    <a href="index.html#about">About</a>
                 </li>
                 <li>
                     <a href="#resources">Resources</a>
@@ -56,12 +51,10 @@ background-color: yellow;">
                         <li><a class="dropdown-item" href="prescriptions.html">Prescriptions</a></li>
                         <li><a class="dropdown-item" href="MoodJournal.html">Mood Journal</a></li>
                         <li><a class="dropdown-item" href="#">Relaxation music</a></li>
-                        <li><a class="dropdown-item" href="#">Moby Music</a></li>
-                        <li><a class="dropdown-item" href="#">Nature Sounds with video</a></li>
-                        <li><a class="dropdown-item" href="index.html#data-list-wrapper-AdultColoring">Adult coloring</a></li>
-                        <li><a class="dropdown-item" href="#">Guided Imagery</a></li>
-                        <li><a class="dropdown-item" href="#">Daily Affirmations</a></li>
-                        <li><a class="dropdown-item" href="#guidedMeditation">Guided Mediatoin</a></li>
+                        <li><a class="dropdown-item" href="carousel.html">Carousels</a></li>
+                        <li><a class="dropdown-item" href="#data-list-wrapper-AdultColoring">Adult coloring</a></li>
+                        <li><a class="dropdown-item" href="#affirmations">Daily Affirmations</a></li>
+                        <li><a class="dropdown-item" href="#guidedMeditation">Guided Meditation</a></li>
                         <li><a class="dropdown-item" href="#audioStories">Audio Stories</a></li>
                     </ul>
                 </li>
@@ -89,27 +82,27 @@ background-color: yellow;">
         <div class="signup-container">
             <form class="signup-form">
                 <div class="form-group">
-                    <label for="firstName"></label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    <label for="FirstName"></label>
+                    <input type="text" id="FirstName" name="firstName" placeholder="Enter your first name" required>
                 </div>
                 <div class="form-group">
-                    <label for="lastName"></label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    <label for="LastName"></label>
+                    <input type="text" id="LastName" name="lastName" placeholder="Enter your last name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="Email"></label>
+                    <input type="email" id="Email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <label for="password"></label>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <label for="Password"></label>
+                    <input type="password" id="Password" name="password" placeholder="Password" required>
                 </div>
                 <div class="form-group">
-                    <label for="retypePassword"></label>
-                    <input type="password" id="retypePassword" name="retypePassword" placeholder="Retype password"
+                    <label for="RetypePassword"></label>
+                    <input type="password" id="RetypePassword" name="retypePassword" placeholder="Retype password"
                         required>
                 </div>
-                <button class="Button" type="submit">Sign Up</button>
+                <button id="sgnup_btn" class="Button" type="submit">Sign Up</button>
                 <!-- <button class="Button" type="submit">Login</button> -->
             </form>
         </div>
@@ -133,6 +126,89 @@ background-color: yellow;">
           <div></div>
         </div>
       </footer>
+      <script>
+
+        let FirstName = document.getElementById("FirstName");
+      let LastName = document.getElementById("LastName");
+      let Email = document.getElementById("Email");
+      let Password = document.getElementById("Password");
+      let RetypePassword = document.getElementById("RetypePassword");
+
+      let sgnup_btn = document.getElementById("sgnup_btn");
+
+      async function addSignup() {
+        try {
+          let signup = {
+            FirstName: FirstName.value,
+            LastName: LastName.value,
+            Email: Email.value,
+            Password: Password.value,
+            RetypePassword: RetypePassword.value,
+          };
+          console.log(signup);
+
+          let userDataArrayJSON = localStorage.getItem("userDataArray");
+          let userDataArray = [];
+
+          if (userDataArrayJSON) {
+            userDataArray = JSON.parse(userDataArrayJSON);
+            console.log("Existing user data array:", userDataArray);
+          } else {
+            console.log("No existing user data array found.");
+          }
+
+          const existingUser = userDataArray.find(
+            (user) => user.Email === Email.value
+          );
+
+          if (existingUser) {
+            alert("User is already registered. Please login.");
+            console.log(
+              "User is already registered. Performing login:",
+              existingUser
+            );
+            // Adjust the path based on your folder structure
+            setTimeout(() => {
+              window.location.href = "login.html";
+            }, 1500);
+          } else {
+            const newUser = { Email: Email.value, Password: Password.value };
+
+            userDataArray.push(newUser);
+
+            localStorage.setItem(
+              "userDataArray",
+              JSON.stringify(userDataArray)
+            );
+
+            alert("Your account has been created successfully");
+
+            console.log("User signed up and logged in:", newUser);
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+      sgnup_btn.addEventListener("click", (e) => {
+        if (
+          FirstName.value &&
+          LastName.value &&
+          Email.value &&
+          Password.value &&
+          RetypePassword.value
+        ) {
+          if (Password.value === RetypePassword.value) {
+            e.preventDefault();
+            addSignup();
+          } else {
+            alert("Passwords do not match");
+          }
+        } else {
+          alert("Please fill all the fields");
+        }
+      });
+      </script>
 </body>
 
 </html>

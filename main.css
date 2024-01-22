@@ -310,7 +310,7 @@ nav ul .dropdown-menu a {
   font-weight: bold;
 
   font-size: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   transition: 0.4s;
 }
 
@@ -342,7 +342,7 @@ nav ul .dropdown-menu a {
   flex-direction: column;
   margin: auto;
   justify-content: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #FAQTitle {
@@ -355,14 +355,14 @@ nav ul .dropdown-menu a {
   padding: 20px;
   /* margin-bottom: 3%; */
   color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .accordionContainerStyle {
   padding: 0% 5% 5% 5%;
   padding-left: 5%;
   padding-right: 5%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 @keyframes smoothOpen {
@@ -408,7 +408,7 @@ nav ul .dropdown-menu a {
   text-align: justify;
   text-justify: inter-word;
   padding: 2% 2% 2% 2%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .privacyTitle {
@@ -422,7 +422,7 @@ nav ul .dropdown-menu a {
   margin-bottom: 3%;
 
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .aboutContainer {
@@ -509,7 +509,7 @@ input {
   background-color: black;
 
   margin: auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #contactSubmitBtn:hover {
@@ -523,7 +523,7 @@ input {
   padding: 10px;
   color: white;
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -783,6 +783,9 @@ input {
 
 /* prescriptions */
 .presBox{
+  margin: auto;
+  margin-left: 350px;
+  width: 70%;
   border:1px solid black;
   background-color:  #020101;
   color:  #fce505;
@@ -893,7 +896,7 @@ input {
 
   color: white;
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -910,10 +913,10 @@ input {
 */
 
 #guidedMeditation{
+  padding: 50px 0px 50px 180px;
+  background-color:  rgb(72, 231, 72);
   /*width: 100%;*/
   border: 2px solid black;
-  padding: 50px 0px 50px 280px;
-  background-color: rgb(178,255,102);
 }
 #gmTitle{
   display: flex;
@@ -970,9 +973,9 @@ input {
 
 /*Audio Stories*/
 #audioStories {
+  padding: 50px 0px 50px 180px;
+  background-color:  rgb(72, 231, 72);
   border: 2px solid black;
-  padding: 50px 0px 50px 280px;
-  background-color: rgb(178, 255, 102);
   position: relative;
 }
 
