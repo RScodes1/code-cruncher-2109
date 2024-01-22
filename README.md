@@ -44,5 +44,5 @@ The names of the contributors to this project are:-
 - Sandesh More.
 
 ## snapshots of the website
-![image-index](image1.png)
+![image-index](image1)
 
