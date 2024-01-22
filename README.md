@@ -39,10 +39,10 @@ https://65adf28e70a827e82364a0f3--fascinating-pithivier-6c8ab6.netlify.app/
 The webpage was made by a team of 4 members.
 The names of the contributors to this project are:-
 
-- Rajasekhar Korada.
-- Abhaysinh Gaikwad.
-- Prince Kumar Diwakar.
-- Sandesh More.
+- Rajasekhar Korada - api setup, deployment- index page(html, css,js), affirmations, adult coloring, workflow
+- Abhaysinh Gaikwad - contact, faq, privacy policy, about, footer
+- Prince Kumar Diwakar - login, signup, mood journal, carousel, prescription, emergency, medical health condition, 
+- Sandesh More - guided meditation, audio stories(html, css, js) 
 
 ## snapshots of the website
 index page
