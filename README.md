@@ -47,14 +47,14 @@ The names of the contributors to this project are:-
 index page
 ![image-index](image1)
 
-contact page
+about page
 ![contact](image2)
 
 login page
 ![login](image3)
 
-audio page
+contact page
 ![audio](image4)
 
-dont know
+meditation know
 ![](image5)
