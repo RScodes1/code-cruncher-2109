@@ -13,8 +13,7 @@ Mental Health Awareness Webpage
 ## Webpage-delpoyment
 
 The webpage link is:- 
-https://65adf28e70a827e82364a0f3--fascinating-pithivier-6c8ab6.netlify.app/
-
+https://mental-health-raj.netlify.app/
 ## Introduction
 
 - Welcome to the Blog Webpage! - iMind Webpage - The scope of the project is to create awareness about mental health for the Indian audiences because how little people care about the overall well being of individuals keeping physical health apart. From this website and our efforts we want to create that impact among masses and along with it, set up necessary treatments so people want to visit our website very frequently.
