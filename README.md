@@ -2,6 +2,10 @@
 
 Mental Health Awareness Webpage
 
+ description
+
+- Welcome to the Blog Webpage! - iMind Webpage - The scope of the project is to create awareness about mental health for the Indian audiences because how little people care about the overall well being of individuals keeping physical health apart. From this website and our efforts we want to create that impact among masses and along with it, set up necessary treatments so people want to visit our website very frequently.
+
 ## Table of Contents
 
 - Webpage.
@@ -14,9 +18,6 @@ Mental Health Awareness Webpage
 
 The webpage link is:- 
 https://mental-health-raj.netlify.app/
-## Description
-
-- Welcome to the Blog Webpage! - iMind Webpage - The scope of the project is to create awareness about mental health for the Indian audiences because how little people care about the overall well being of individuals keeping physical health apart. From this website and our efforts we want to create that impact among masses and along with it, set up necessary treatments so people want to visit our website very frequently.
 
 ## Features
 
